@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChocoDelight - Premium Chocolates</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">ChocoDelight 🍫</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Chocolates</a></li>
+        <li><a href="#" onclick="openCart()">Cart 🛒 <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1 style="color: brown;">Welcome to ChocoDelight</h1>
+    <p style="color: brown;">Discover the finest handmade chocolates delivered to your doorstep.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <section id="products">
+    <h2>Our Best Sellers</h2>
+    <div class="product-container" id="product-list">
+      <!-- Products will be injected by JS -->
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p>Total: ₹<span id="cart-total">0</span></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ChocoDelight. All rights reserved.</p>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>
